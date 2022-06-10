@@ -1,0 +1,30 @@
+@import "../common/base";
+@import "../layouts/header";
+
+.btContentHolder {
+  width: auto;
+  padding: 0;
+
+  .btContent {
+    width: auto;
+    padding: 0;
+
+    .bt_bb_section {
+      // position: relative;
+
+      .bt_bb_port {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .bt_bb_row {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-content: flex-start;
+
+          margin: 0 -20px;
+        }
+      }
+    }
+  }
+}
