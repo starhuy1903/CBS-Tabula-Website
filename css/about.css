@@ -20,6 +20,17 @@ a {
   padding: 0 1rem;
 }
 
+.separator {
+  margin-bottom: 35px;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 .main-header .container {
   display: flex;
   justify-content: space-between;
@@ -30,6 +41,11 @@ a {
   display: flex;
   font-size: 13px;
   color: #181818;
+}
+
+.main-header .container .right-side .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main-header .container .right-side .navbar .nav-link {
@@ -81,28 +97,130 @@ a {
   color: #b61984;
 }
 
-.carousel .container .top .row {
+.carousel {
+  position: relative;
+  padding-top: 100px;
+}
+
+.carousel .container .top .carousel-content {
   display: flex;
   align-items: center;
 }
 
-.carousel .container .top .row .left {
+.carousel .container .top .carousel-content .left {
   width: 100%;
 }
 
-.carousel .container .top .row .left .title {
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-.carousel .container .top .row .left .title h2 {
+.carousel .container .top .carousel-content .left .title h2 {
   font-size: 1.1rem;
   margin-bottom: 0.5em;
   color: #b61984;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-.carousel .container .top .row .right {
+.carousel .container .top .carousel-content .left .title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.carousel .container .top .carousel-content .right {
   text-align: left;
+}
+
+.carousel .top-coverage-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel .top-coverage-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel .bottom-coverage-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.teacher-gallery {
+  position: relative;
+  background-color: #dcd1f3;
+}
+
+.teacher-gallery .col {
+  text-align: center;
+  transition: all 300ms ease-in;
+  z-index: 10;
+}
+
+.teacher-gallery .col .content-col {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  width: 100%;
+  background-color: white;
+}
+
+.teacher-gallery .col .content-col .inner-col {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.teacher-gallery .col .content-col .inner-col .image-area {
+  margin: 0 -2em;
+  overflow: hidden;
+}
+
+.teacher-gallery .col .content-col .inner-col .image-area img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+}
+
+.teacher-gallery .col .content-col .inner-col .image-area:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.teacher-gallery .col .content-col .inner-col .headline .national {
+  display: block;
+  color: #b61984;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+}
+
+.teacher-gallery .col .content-col .inner-col .headline .name {
+  display: block;
+  color: inherit;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.teacher-gallery .col .content-col .inner-col .text p {
+  font-size: 15px;
+}
+
+.teacher-gallery .col:hover .content-col {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-gallery .bottom-coverage-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.teacher-gallery .bottom-coverage-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 /*# sourceMappingURL=about.css.map */

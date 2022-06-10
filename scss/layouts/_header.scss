@@ -1,170 +1,9 @@
-// .mainHeader {
-//   width: 100%;
-//   position: absolute;
-//   transform: translateY(0);
-//   transition: 300ms ease all;
-
-//   //   visibility: initial;
-//   //   opacity: 1;
-//   //   color: #181818;
-//   //   background-color: transparent
-
-//   .btLogoArea {
-//     position: relative;
-//     z-index: 1;
-
-//     .port {
-//       display: flex;
-//       .logo {
-//         line-height: 0;
-//         z-index: 6;
-//         position: relative;
-//         padding-left: 80px;
-//       }
-
-//       .menuPort {
-//         font-size: 13px;
-//         display: flex;
-//         flex-direction: row-reverse;
-
-//         .topBarInMenu {
-//           line-height: inherit;
-//           // float: right;
-//           height: 80px;
-//           margin-left: 50px;
-//           display: flex;
-//           align-items: center;
-
-//           .topBarInMenuCell {
-//             line-height: 38px;
-//             display: flex;
-//             align-items: center;
-//             vertical-align: middle;
-//             font-size: 0.9em;
-
-//             div.btButtonWidget {
-//               font-size: 0.9rem;
-//               display: inline-block;
-//               line-height: 1;
-//               width: auto;
-
-//               .btButtonWidgetLink {
-//                 border-radius: 50px;
-//                 display: flex;
-//                 flex-flow: row nowrap;
-//                 justify-content: center;
-//                 align-items: center;
-//                 align-content: flex-start;
-//                 position: relative;
-//                 overflow: hidden;
-//                 padding: 1.1em 1.5em;
-//                 margin: 6px;
-//                 font-weight: 500;
-//                 text-align: center;
-//                 background: transparent;
-//                 transition: all 300ms ease;
-
-//                 .btIconWidgetIcon {
-//                   padding-right: 0.5em;
-//                 }
-//               }
-//             }
-//           }
-//           .btLightAccentButton {
-//             a {
-//               box-shadow: 0 0 0 3em #b61984 inset;
-//               color: #fff;
-
-//               &:hover {
-//                 color: #b61984;
-//                 box-shadow: 0 0 0 1px #b61984 inset;
-//               }
-//             }
-//           }
-//           .btIconWidget {
-//             position: relative;
-//             display: inline-block;
-//             line-height: inherit;
-//             transition: all 100ms linear;
-//             margin: 0;
-
-//             &:not(:first-child) {
-//               margin-left: 1em;
-//               margin-right: 0;
-//             }
-
-//             .btIconWidgetIcon {
-//               line-height: inherit;
-//               display: inline-block;
-//               font-size: 1.25em;
-//             }
-//           }
-//         }
-
-//         nav {
-//           // float: right;
-//           padding-left: 50px;
-//           text-align: center;
-
-//           & > ul > li {
-//             float: left;
-//           }
-
-//           ul {
-//             list-style: none;
-//             // display: block;
-//             // display: flex;
-//             //   align-items: center;
-//             // justify-content: flex-end;
-//             margin: 0;
-//             padding: 0;
-//             transition: all 100ms ease 0s;
-
-//             li {
-//               display: block;
-//               margin: 0;
-//               padding: 0 50px 0 0;
-//               // float: left;
-//               z-index: 5;
-
-//               a {
-//                 font-weight: 600;
-//               }
-
-//               &.btMenuWideDropDown {
-//                 position: static;
-//               }
-
-//               &:not(.current-menu-ancestor) > ul {
-//                 display: none;
-//               }
-//             }
-//           }
-//         }
-
-//         ul {
-//           & > li {
-//             & > ul {
-//               opacity: 1;
-//               pointer-events: none;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .btHorizontalMenuTrigger {
-//   }
-
-//   a {
-//     color: inherit;
-//     transition: all 100ms linear;
-//     position: relative;
-//   }
-// }
-
 .main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -176,6 +15,9 @@
       color: #181818;
 
       .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+
         .nav-link {
           font-weight: 600;
           padding: 0 50px 0 0;
