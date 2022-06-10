@@ -1,28 +1,30 @@
 @import "../common/base";
 @import "../layouts/header";
 
-.btContentHolder {
-  width: auto;
-  padding: 0;
-
-  .btContent {
-    width: auto;
-    padding: 0;
-
-    .bt_bb_section {
-      // position: relative;
-
-      .bt_bb_port {
+.carousel {
+  .container {
+    .top {
+      .row {
         display: flex;
-        flex-flow: row nowrap;
+        align-items: center;
 
-        .bt_bb_row {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-          align-content: flex-start;
+        .left {
+          width: 100%;
 
-          margin: 0 -20px;
+          .title {
+            font-weight: 700;
+            font-size: 3rem;
+
+            h2 {
+              font-size: 1.1rem;
+              margin-bottom: 0.5em;
+              color: #b61984;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .right {
+          text-align: left;
         }
       }
     }

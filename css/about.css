@@ -81,26 +81,28 @@ a {
   color: #b61984;
 }
 
-.btContentHolder {
-  width: auto;
-  padding: 0;
-}
-
-.btContentHolder .btContent {
-  width: auto;
-  padding: 0;
-}
-
-.btContentHolder .btContent .bt_bb_section .bt_bb_port {
+.carousel .container .top .row {
   display: flex;
-  flex-flow: row nowrap;
+  align-items: center;
 }
 
-.btContentHolder .btContent .bt_bb_section .bt_bb_port .bt_bb_row {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin: 0 -20px;
+.carousel .container .top .row .left {
+  width: 100%;
+}
+
+.carousel .container .top .row .left .title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.carousel .container .top .row .left .title h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  color: #b61984;
+  text-transform: uppercase;
+}
+
+.carousel .container .top .row .right {
+  text-align: left;
 }
 /*# sourceMappingURL=about.css.map */
